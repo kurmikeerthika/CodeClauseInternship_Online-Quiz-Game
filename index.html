@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="start-screen">
+            <h1> Quiz </h1>
+            <p>Welcome to the quiz! Click "Start Quiz" to begin.</p>
+            <button id="start-btn" class="btn start-btn">Start Quiz</button>
+        </div>
+
+        <div id="question-container" class="hide">
+            <p id="question-number"></p> <!-- Shows Question Number -->
+            <h2 id="question"></h2>
+            <div id="answer-buttons" class="btn-container"></div>
+
+            <div class="controls">
+                <button id="prev-btn" class="btn prev-btn hide">Previous</button>
+                <button id="submit-btn" class="btn submit-btn">Submit</button>
+                <button id="next-btn" class="btn next-btn hide">Next</button>
+                <button id="final-submit-btn" class="btn final-submit-btn hide">Final Submit</button>
+            </div>
+
+            <div id="timer">
+                <p>Time Left: <span id="remaining-time-display">10:00</span></p>
+                <div class="time-bar-container">
+                    <div id="time-bar" class="time-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="result-screen" class="hide">
+            <h2>Test Submitted Successfully!</h2>
+            <p id="result-text"></p>
+            <button id="restart-btn" class="btn restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
